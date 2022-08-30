@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "SmartTvConnectSDK"
 include ':app'
+include 'Connect-SDK-Android'

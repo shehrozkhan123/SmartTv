@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'com.android.library'
 apply plugin: 'jacoco'
 
-apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.ConnectSDK'
 
 jacoco {
@@ -121,22 +121,22 @@ dependencies {
     implementation fileTree(dir: 'modules/firetv/libs', include: '*.jar')
 
 
-    implementation 'androidx.mediarouter:mediarouter:1.2.0'
-    implementation 'androidx.annotation:annotation:1.0.0'
-    implementation 'androidx.preference:preference:1.1.1'
-    implementation 'androidx.appcompat:appcompat:1.3.1'  // 1.4.1 version doesn't support compile sdk 30
+    implementation 'androidx.mediarouter:mediarouter:1.3.1'
+    implementation 'androidx.annotation:annotation:1.4.0'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'  // 1.4.1 version doesn't support compile sdk 30
     implementation 'com.googlecode.plist:dd-plist:1.23'
     implementation 'com.nimbusds:srp6a:2.1.0'
     implementation 'net.i2p.crypto:eddsa:0.3.0'
-    implementation 'com.google.android.gms:play-services-cast-framework:9.4.0'
+    implementation 'com.google.android.gms:play-services-cast-framework:21.1.0'
     implementation files('core/libs/lgcast-android-lib.jar')
 
     testImplementation 'org.apache.maven:maven-ant-tasks:2.1.3'
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'org.robolectric:robolectric:2.4'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.2.1'
     testImplementation 'org.mockito:mockito-all:1.10.19'
     testImplementation 'org.powermock:powermock-api-mockito:1.6.2'
     testImplementation 'xmlunit:xmlunit:1.4'
 }
 
-apply from: 'maven-push.gradle'
+//apply from: 'maven-push.gradle'
